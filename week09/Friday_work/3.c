@@ -3,6 +3,9 @@
 #include <stdlib.h>
 #include <assert.h>
 
+// our first attempt at having a heap allocation in a struct
+// steveh - prog71985 - week09 - fall23
+
 #define MAXSIZE 80
 
 typedef struct student {

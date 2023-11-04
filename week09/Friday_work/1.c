@@ -2,7 +2,8 @@
 #include <string.h>
 
 // progression - week9
-//
+// what *NOT* to do
+// fall23 - steveh - prog71985 - week09
 
 #define MAXNAME 40
 

@@ -3,6 +3,9 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+// pushing our STUDENT into the heap
+//  week09 - steveh - prog71985 - fall23
+
 #define MAXNAME     80
 
 typedef struct student {

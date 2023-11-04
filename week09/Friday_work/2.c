@@ -3,6 +3,9 @@
 
 #define MAXNAME     80
 
+// our first foray into heap allocations
+// steveh - fall23 - prog71985 - week09
+
 int main(void) {
 //    char name[MAXNAME];
 
