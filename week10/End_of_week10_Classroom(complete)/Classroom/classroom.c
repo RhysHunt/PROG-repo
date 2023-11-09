@@ -71,7 +71,7 @@ CLASSROOM LoadClassroomFromDisk(char* filename) {
 	int maxCapacity;
 	int chars = fscanf(fp, "%d\n", &maxCapacity);
 	int count;
-	int chars = fscanf(fp, "%d\n", &count);
+	chars = fscanf(fp, "%d\n", &count);
 	for (int i = 0; i < count; i++) {
 		OCCUPANT o = LoadOccupantFromDisk(fp);
 		AddOccupantToClassroom(&c, o);
