@@ -15,15 +15,13 @@ typedef struct student {
 
 STUDENT CreateStudent(int StudentNum, char* Name);
 
-bool SetStudentNumber(STUDENT s, int StudentNum);
-
 bool CopyStudent(STUDENT* dest, const STUDENT src);
 bool CompareStudent(STUDENT lhs, STUDENT rhs);					//NEW
 
-void SetStudentName(STUDENT s, char* Name);
+bool SetStudentName(STUDENT* s, char* Name);
+bool SetStudentNumber(STUDENT* s, int StudentNum);
 
 bool GetStudentNumber(STUDENT s, int* StudentNum);
-
 bool GetStudentName(STUDENT s, char* Name);
 
 bool SaveStudentToDisk(STUDENT, FILE* fp);

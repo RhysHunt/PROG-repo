@@ -37,14 +37,14 @@ bool CompareProfessor(PROFESSOR lhs, PROFESSOR rhs) {
 }
 
 bool SetProfessorName(PROFESSOR* p, const char* Name) {
-	if (Name == NULL)
+	if (Name == NULL || p == NULL)
 		return false;
 	strncpy(p->name, Name, MAXSIZE);
 	return true;
 }
 
 bool SetProfessorDept(PROFESSOR* p, const char* Dept) {
-	if (Dept == NULL)
+	if (Dept == NULL || p == NULL)
 		return false;
 	strncpy(p->dept, Dept, MAXSIZE);
 	return true;

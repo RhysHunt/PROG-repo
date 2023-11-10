@@ -37,20 +37,24 @@ bool CompareStudent(STUDENT lhs, STUDENT rhs) {				//yes, this could be improved
 		return false;
 }
 
-bool SetStudentNumber(STUDENT s, int StudentNum)
+bool SetStudentNumber(STUDENT* s, int StudentNum)
 {
 	if (StudentNum <= 0) {
 		fprintf(stderr, "invalid student number\n");
-		s.studentnum = -1;
+		s->studentnum = -1;
 		return false;
 	}
-	s.studentnum = StudentNum;
+	s->studentnum = StudentNum;
 	return true;
 }
 
-void SetStudentName(STUDENT s, char* Name)
+bool SetStudentName(STUDENT* s, char* Name)
 {
-	strncpy(s.name, Name, MAXNAME);
+	if (s == NULL || Name == NULL)
+		return false;
+
+	strncpy(s->name, Name, MAXNAME);
+	return true;
 }
 
 bool GetStudentNumber(STUDENT s, int* StudentNum)

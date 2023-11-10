@@ -71,9 +71,11 @@ bool SaveClassroomToDisk(CLASSROOM c, char* filename) {
 	fprintf(fp, "%s\n", c.name);
 	fprintf(fp, "%d\n", GetMaxCapacityFromClassroom(c));
 	fprintf(fp, "%d\n", GetCurrentCountFromClassroom(c));
-	for (int i = 0; i < GetCurrentCountFromClassroom(c); i++) {
-		OCCUPANT o = GetOccupantFromClasroomByOrdinal(c, i);
-		SaveOccupantToDisk(o, fp);
+	for (int i = 0; i < GetMaxCapacityFromClassroom(c); i++) {
+		if (c.seats[i] == FILLED) {
+			OCCUPANT o = GetOccupantFromClasroomByOrdinal(c, i);
+			SaveOccupantToDisk(o, fp);
+		}
 	}
 	fclose(fp);
 	return true;

@@ -4,7 +4,7 @@
 #include "professor.h"
 #include <stdio.h>
 // ensure that 1 "person" per "seat"
-// 
+// prog71985 - steveh - fal22 - week09 
 
 #define STUDENT_LABEL			"__STUDENT__\n"
 #define GUEST_LABEL				"__GUEST__\n"

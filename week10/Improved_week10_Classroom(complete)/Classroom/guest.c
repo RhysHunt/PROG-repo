@@ -37,7 +37,7 @@ bool CopyGuest(GUEST* dest, const GUEST src) {
 }
 
 bool CompareGuest(GUEST lhs, GUEST rhs) {
-	if (strncpy(lhs.name, rhs.name, MAXSIZE) == 0)
+	if (strncmp(lhs.name, rhs.name, MAXSIZE) == 0)
 		return true;
 	else 
 		return false;
