@@ -16,3 +16,6 @@ void Add(PLISTNODE* list, ITEM i);
 void Remove(PLISTNODE* list, ITEM i);
 
 void DestroyList(PLISTNODE* list);
+
+PLISTNODE Search(PLISTNODE list, ITEM i);
+PLISTNODE SearchR(PLISTNODE list, ITEM i);
