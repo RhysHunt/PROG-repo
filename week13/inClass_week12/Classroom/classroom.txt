@@ -1,0 +1,11 @@
+prog71985
+35
+3
+__GUEST__
+my special friend
+__PROFESSOR__
+steve
+ACSIT
+__STUDENT__
+bob
+12345678
